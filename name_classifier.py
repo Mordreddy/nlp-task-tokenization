@@ -156,3 +156,37 @@ if __name__ == '__main__':
     for name in test_names:
         result = predict_name(model, name, dataset)
         print(f"Name: {name:10} → Country: {result}")
+
+#result:
+'''
+Dataset loaded: 20074 names | 18 countries
+
+Start training (20 epochs)
+Epoch  1 | Loss: 0.0124 | Accuracy: 0.5484
+Epoch  2 | Loss: 0.0092 | Accuracy: 0.6589
+Epoch  3 | Loss: 0.0082 | Accuracy: 0.6928
+Epoch  4 | Loss: 0.0078 | Accuracy: 0.7035
+Epoch  5 | Loss: 0.0069 | Accuracy: 0.7355
+Epoch  6 | Loss: 0.0064 | Accuracy: 0.7577
+Epoch  7 | Loss: 0.0059 | Accuracy: 0.7704
+Epoch  8 | Loss: 0.0057 | Accuracy: 0.7814
+Epoch  9 | Loss: 0.0053 | Accuracy: 0.7903
+Epoch 10 | Loss: 0.0051 | Accuracy: 0.8023
+Epoch 11 | Loss: 0.0048 | Accuracy: 0.8102
+Epoch 12 | Loss: 0.0046 | Accuracy: 0.8160
+Epoch 13 | Loss: 0.0044 | Accuracy: 0.8215
+Epoch 14 | Loss: 0.0042 | Accuracy: 0.8325
+Epoch 15 | Loss: 0.0041 | Accuracy: 0.8368
+Epoch 16 | Loss: 0.0039 | Accuracy: 0.8437
+Epoch 17 | Loss: 0.0037 | Accuracy: 0.8480
+Epoch 18 | Loss: 0.0036 | Accuracy: 0.8537
+Epoch 19 | Loss: 0.0034 | Accuracy: 0.8596
+Epoch 20 | Loss: 0.0033 | Accuracy: 0.8628
+
+Prediction Results:
+Name: Cui        → Country: Chinese
+Name: Smith      → Country: English
+Name: Mohammed   → Country: English
+Name: Ivanov     → Country: Russian
+Name: Nguyen     → Country: Dutch
+'''
