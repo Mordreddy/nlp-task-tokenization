@@ -1,11 +1,9 @@
 import networkx as nx
 
-G = nx.path_graph(4)
+G_path = nx.path_graph(4)
+cent_path = nx.eigenvector_centrality_numpy(G_path)
+print("Eigenvector centrality:", cent_path)
 
-centrality = nx.eigenvector_centrality_numpy(G)
-
-print("nodes：", list(G.nodes))
-print("edge：", list(G.edges))
-print("val in centrality：")
-for node, val in centrality.items():
-    print(f"node {node}: {val:.4f}")
+G_cycle = nx.cycle_graph(4)
+cent_cycle = nx.eigenvector_centrality_numpy(G_cycle)
+print("Eigenvector centrality:", cent_cycle)
